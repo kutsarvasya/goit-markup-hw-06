@@ -521,7 +521,7 @@ box-shadow var(--anim), border-color var(--anim);
        
     
         width: 408px;
-        height: 576px;
+        padding-bottom: 24px;
         padding-top: 72px;
         padding-left: 24px;
         padding-right: 24px;
@@ -701,7 +701,12 @@ padding-left: 16px;
 background-color: transparent;
 outline: none;
 color: var(--white-color);
+transition: border-color var(--anim);
 }
+.footer-form-input:focus {
+    border-color: var(--accent-color);
+}
+
 .footer-form-input::placeholder{
     font-size: 12px;
     line-height: 1.5;
@@ -725,7 +730,13 @@ color: var(--white-color);
     font-size: 16px;
     line-height: 1.5px;
     letter-spacing: 0.04em;
-   
+    transition: background-color var(--anim);
+    
+}
+
+.footer-form-btn:hover, 
+.footer-form-btn:focus {
+background-color: var(--btn-bg-color);
 }
 
 .footer-form-btn-icon {
@@ -740,5 +751,5 @@ color: var(--white-color);
 }
 
 .social-footer-container{
-    margin-right: 80px;
+    margin-right: auto;
 }
