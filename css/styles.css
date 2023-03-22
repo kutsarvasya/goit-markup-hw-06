@@ -395,7 +395,7 @@ margin-right: 120px;
     gap: 16px;
 }
 .socials-link.icon-footer {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--accent-color);
     transition: background-color var(--anim);
     
 }
@@ -511,15 +511,20 @@ box-shadow var(--anim), border-color var(--anim);
     pointer-events: none;
 }
 .modal{
+
     position: absolute;
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         z-index: 100;
+
+       
     
         width: 408px;
         height: 576px;
-        padding: 30px;
+        padding-top: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
         background: #FCFCFC;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
@@ -547,4 +552,193 @@ box-shadow var(--anim), border-color var(--anim);
 background-color: #404BBF;
 fill: #ffffff;
 border: none;
+}
+
+
+.modal-form-label {
+    display: block;
+    color: #8E8F99;
+    margin-bottom: 4px;
+    font: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+
+    letter-spacing: 0.01em;
+
+}
+
+.modal-form-group {
+    position: relative;
+    margin-bottom: 8px;
+    
+}
+
+.modal-form-field {
+    width: 100%;
+    padding-left: 38px;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    outline: transparent;
+    transition: border var(--anim);
+   
+}
+
+.modal-form-field:focus + .modal-class-icon{
+   fill: #4D5AE5; 
+}
+.modal-form-field:focus {
+    border: 1px solid #4D5AE5
+}
+
+.modal-class-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #2E2F42;
+    transition: fill var(--anim);
+
+}
+.modal-cta{
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.modal-form-massage{
+    
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    outline: transparent;
+    transition: border var(--anim);
+ 
+}
+.modal-form-massage::placeholder{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+.modal-form-massage:focus {
+border: 1px solid #4D5AE5
+}
+
+
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+
+
+.checked {
+    fill: #404BBF;
+    opacity: 0;
+    transition: opacity var(--anim);
+
+}
+.modal-form-checkbox:checked + .modal-form-custom-checkbox >
+ .checked{
+    opacity: 1;
+ }
+.unchecked {
+    opacity: 1;
+    transition: opacity var(--anim);
+    
+
+}
+.modal-form-checkbox:checked+.modal-form-custom-checkbox>.unchecked {
+  
+    opacity: 0;
+}
+
+.modal-form-agreement-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    user-select: none;
+}
+.modal-form-agreement-link{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+.modal-form-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-form-input {
+border: 1px solid #FFFFFF;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+padding-left: 16px;
+background-color: transparent;
+outline: none;
+color: var(--white-color);
+}
+.footer-form-input::placeholder{
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.footer-form-style-btn {
+    position: relative;
+}
+
+.footer-form-btn {
+    
+    display: block;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    height: 40px;
+    padding-left: 24px;
+    padding-right: 64px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.04em;
+   
+}
+
+.footer-form-btn-icon {
+    background-color: transparent;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    position: absolute;
+    
+    
+}
+
+.social-footer-container{
+    margin-right: 80px;
 }
